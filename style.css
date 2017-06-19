@@ -1,0 +1,39 @@
+* { box-sizing: border-box;
+	max-width: 100%; }
+
+.personal_title {
+	margin: 0;
+}
+
+
+header {
+	width: 100%;
+	overflow: auto;
+	display: inline-block;
+	
+}
+
+#logo {
+	float: left;
+	width: 50%;
+	
+}
+
+#name {
+	margin-top: 10px;
+	float: right;
+	width: 50%;
+	vertical-align: top;
+}
+
+.name {
+	margin: 0;
+	vertical-align: top;
+}
+
+
+
+
+#main_img {
+	width: 10px;
+}
