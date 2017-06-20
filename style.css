@@ -1,29 +1,47 @@
 * { box-sizing: border-box;
 	max-width: 100%; }
 
-.personal_title {
+p {
+	margin: 0;
+}
+
+/*Go back and remove some redundancy later with removing the margins on the other h1s*/
+h1 {
 	margin: 0;
 }
 
 
 header {
 	width: 100%;
-	overflow: auto;
 	display: inline-block;
+	font-size: 10pt;
+	text-decoration
+	border-style: solid;
+    border-bottom: thin solid black;
 	
 }
 
 #logo {
 	float: left;
+	width: 130px;
+}
+
+#name_and_title {
+	float: right;
 	width: 50%;
-	
+	text-align: right;
+
+}
+
+.personal_title {
+	margin: 0;
 }
 
 #name {
 	margin-top: 10px;
-	float: right;
 	width: 50%;
-	vertical-align: top;
+	text-align: right;
+	display: inline-block;
 }
 
 .name {
@@ -31,9 +49,71 @@ header {
 	vertical-align: top;
 }
 
-
-
-
 #main_img {
-	width: 10px;
+	width: 100%;
+}
+
+.buttons_container {
+	display: block;
+	text-align: center;
+}
+
+/*This is a general class for all the buttons */
+.button {
+	background-color: yellow;
+	/*Make the buttons semi-transparent. I got this code here: http://stackoverflow.com/questions/7868775/how-to-make-a-transparent-sticky-header; 
+	The lower the Opacity value, on line 58, the higher the transparency*/
+  	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  	filter: alpha(opacity=50);
+  	-moz-opacity: 0.80;
+  	-khtml-opacity: 0.8;
+  	opacity: .8;
+}
+
+
+.button_cv {
+	width: 100%;
+	height: 1em;
+	border-radius: 10%;
+	background-color: red; 
+	margin: 0;
+}
+
+.button_code {
+	width: 100%;
+	height: 1em;
+	border-radius: 10%;
+	background-color: green;
+	margin-top: 2px;
+	margin-bottom: 0px;
+}
+
+.button_about {
+	width: 100%;
+	height: 1em;
+	border-radius: 10%;
+	background-color: blue; 
+	margin-top: 2px;
+	margin-bottom: 0px;
+}
+
+.featured_work {
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+
+.featured_work {
+	font-size: 1em;
+	width: 100%;
+}
+
+.featured_item {
+	text-align: left;
+	border: thick solid black;
+	margin: 10px;
+}
+
+/*doesn't work*/
+#featured_work_title {
+	text-align: left;
 }

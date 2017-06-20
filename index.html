@@ -10,56 +10,45 @@
 	<header>
 		<!--Begin logo-->
 		<img id="logo" src="logo.png" alt="The logo for my portfolio"> </img>
-		<div id="name">
+		<!--Begin Name and Title Div-->
+		<div id="name_and_title">
 			<h1 class="name"> Max Carey </h1>
 			<p class="personal_title"> Linguistics, Spanish, Programming </p>
 		</div>
 	</header>
+	<!--Begin Main Image No Texting While Canooing-->
+	<img id="main_img" src="main_img.JPG" alt="The logo for my portfolio">
 	<!--Begin container for buttons-->
 	<div class = "buttons_container">
-		<div class = "button"> </div>
-		<div class = "button"> </div>
-		<div class = "button"> </div>
+		<p class="button button_cv"> CV </p>
+		<p class="button button_code"> Code </p>
+		<p class="button button_about"> About Me </p>
+	</div>
 	<!--Begin Main Page Image-->
-		<figure id="main_img">
-			<img 
-			src="main_img.JPG"
-			alt="The logo for my portfolio">
-			<figcaption> </figcaption>
-		</figure>
 	<footer>
 		<!--Create a container for the featured work itmes
 		May want to come back to this later to see if figures are the best thing to use-->
 		<div class = "featured_work">
-			<h3> Featured Work </h3>
-			<div class = "spanlib"> </div>
-				<!--Begin Spanlib-->
-				<figure>
-					<img 
-					src="rasberry_pi.JPG"
-					alt="The logo for my portfolio">
-					<figcaption> Spanlib: Coding a Mad Lib in Python </figcaption>
-					<p class = "githublink"> https://github.com/axme100/spanlib </p>
-				</figure>
-				<!--Begin Spanlib-->
-				<figure>
-					<img 
-					src="span_pron_wkshop.png"
-					alt="The logo for my portfolio">
-					<figcaption> Spanish Pronunciation: A Workshop </figcaption>
-					<p class = "githublink"> https://www.google.com </p>
-				</figure>
-				<figure>
-					<img 
-					src="att.jpg"
-					alt="Attitudes Picture">
-					<figcaption> Recent Publication </figcaption>
-					<p class = "githublink"> https://www.google.com </p>
-				</figure>
-			<div class = "spanpron"> </div>
-			<div class = "spanpron"> </div>	
-		</div>
-		
+			<h1 id="featured_work_title"> Featured Work: </h1>
+			<!--Begin Spanlib-->
+			<div class = "featured_item">
+				<h2> Spanlib: Programming a Mad Lib in Spanish with a Rasberry Pie  </h2>
+				<img src="rasberry_pi.JPG" alt="The logo for my portfolio"> </img>
+				<p class="githublink"> https://github.com/axme100/spanlib </p>
+			</div>
+			<!--Begin Spanpron-->
+			<div class = "featured_item">
+				<h2> Spanish Pronunciation Workshop with Audio  </h2> 
+				<img src="span_pron_wkshop.png" alt="Picture of PPT"> </img>
+				<p class="githublink"> https://www.google.com </p>
+			</div>
+			<!--Begin Attitudes-->
+			<div class = "featured_item"> 
+				<h2> Publication on Language Attitudes to Spanish in WA </h2>
+				<img src="att.jpg" alt="figure from my paper"> </img>
+				<p class="githublink"> https://www.google.com </p>
+			</div>
+		</div>	
 	</footer>
 </body>
 </html>
