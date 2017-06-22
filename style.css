@@ -1,50 +1,34 @@
-* { box-sizing: border-box;
-	max-width: 100%; }
-
-p {
-	margin: 0;
+* { 
+	box-sizing: border-box;
 }
 
-/*Go back and remove some redundancy later with removing the margins on the other h1s*/
-h1 {
-	margin: 0;
+/*The images don't stretch out of their containers with this command
+Before it was under the **/
+img {
+	max-width: 100%;
 }
 
+/*This code taken from w3 schools*/
+/*I think it reads for every column, float left, and give padding */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /*Keep this in for now, delete later */
+    border: 1px solid red;
+}
 
-header {
-	width: 100%;
-	display: inline-block;
-	font-size: 10pt;
-	text-decoration
-	border-style: solid;
-    border-bottom: medium solid black;	
+.test:before,
+.test:after {
+	content: " ";
+	display: table;
+}
+
+.test:after {
+	clear: both;
 }
 
 #logo {
-	float: left;
-	width: 130px;
-}
-
-#name_and_title {
-	float: right;
-	width: 50%;
-	text-align: right;
-}
-
-.personal_title {
-	margin: 0;
-}
-
-#name {
-	margin-top: 10px;
-	width: 50%;
-	text-align: right;
-	display: inline-block;
-}
-
-.name {
-	margin: 0;
-	vertical-align: top;
+	mad-width: 200px;
 }
 
 #main_img {
@@ -111,7 +95,23 @@ header {
 	width: auto;
 }
 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
 /*1st Break Point*/
+/*
+
 @media only screen and (min-width: 600px) {
 	
 	header {
@@ -145,13 +145,14 @@ header {
 	.button {
 		margin: 10px;
 	}
-}
-
+} 
+ */
 /*2nd Break Point*/
+/*
 @media only screen and (min-width: 720px) {
 
 	image_and_button_container {
 		
 	}
-
+*/
 }
