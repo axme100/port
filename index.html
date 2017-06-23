@@ -6,25 +6,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<!--Begin header-->
-	<div class="test">
+	<!--HEADER IS FIRST ROW IN GRID SYSTEM-->
+	<header class="row">
 		<!--Begin logo-->
-		<img class="col-6" id="logo" src="logo.png" alt="The logo for my portfolio"> </img>
+		<img class="col-4" id="logo" src="logo.png" alt="The logo for my portfolio"> </img>
 		<!--Begin Name and Title Div-->
-		<div class="col-6" id="name_and_title">
+		<div class="col-8" id="name_and_title">
 			<h1 class="name"> Max Carey </h1>
 			<p class="personal_title"> Linguistics, Spanish, Programming </p>
 		</div>
+	</header>
+	<!--BEGIN SECOND ROW IN GRID SYSTEM-->
+	<div class="image_and_buttons_container row">
+		<!--Begin container for buttons-->
+		<div class = "col-3 buttons_container">
+			<p class="button button_cv"> CV </p>
+			<p class="button button_code"> Code </p>
+			<p class="button button_about"> About Me </p>
+		</div>
+		<!--Begin Main Image No Texting While Canooing-->
+		<img class="col-9" id="main_img" src="main_img.JPG" alt="The logo for my portfolio">
 	</div>
-	<!--Begin Main Image No Texting While Canooing-->
-	<img id="main_img" src="main_img.JPG" alt="The logo for my portfolio">
-	<!--Begin container for buttons-->
-	<div class = "buttons_container">
-		<p class="button button_cv"> CV </p>
-		<p class="button button_code"> Code </p>
-		<p class="button button_about"> About Me </p>
-	</div>
-	<!--Begin Main Page Image-->
 	<footer>
 		<h1 id="featured_work_title"> Featured Work: </h1>
 		<!--Create a container for the featured work itmes
