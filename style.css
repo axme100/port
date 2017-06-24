@@ -14,7 +14,6 @@ img {
     float: left;
     padding: 15px;
     /*Keep this in for now, delete later */
-    border: 1px solid red;
 }
 
 /*Set up grid system*/
@@ -26,6 +25,10 @@ img {
 
 .row:after {
 	clear: both;
+}
+
+header {
+	border-bottom: medium black solid;
 }
 
 #logo {
@@ -40,10 +43,6 @@ img {
 
 h1, p {
 	margin: 0;
-}
-
-.image_and_button_container {
-	display: flex;
 }
 
 
@@ -76,7 +75,6 @@ h1, p {
 	height: 2.5em;
 	border-radius: 10%;
 	background-color: green;
-	
 }
 
 .button_about {
@@ -91,13 +89,13 @@ h1, p {
 .featured_work {
 	font-size: 1em;
 	width: 100%;
-
+	display: flex;
 }
 
 .featured_item {
 	text-align: center;
-	border: medium solid black;
-	margin: 10px;
+	border-top: medium solid black;
+	margin: 0px;
 }
 
 /*doesn't work*/
@@ -106,6 +104,7 @@ h1, p {
 }
 
 .featured_image {
+	margin: 0;
 	height: auto;
 	width: auto;
 }
@@ -124,67 +123,32 @@ h1, p {
 .col-12 {width: 100%;}
 
 
+/*Optimize layout for screens less than 620px*/
+@media only screen and (max-width: 619px) {
 
-@media only screen and (max-width: 720px) {
-
-	body {
-		background-color: green;
+	.image_and_buttons_container {
+		display: flex;
+		/*Column-reverse gets the buttons to come after */
+		flex-direction: column-reverse;
 	}
 
-	.image_and_button_container {
-		flex-wrap: wrap;
-	}
-
-	.button_container {
-		display: inline-block;
-		width: 100%;
-	}
-}
-
-/*1st Break Point*/
-/*
-
-@media only screen and (min-width: 600px) {
-	
-	header {
-		font-size: 16pt;
-	}
-
-	#logo {
-		width: 250px;
-	}
-
-	#name_and_title {
-		margin-top: 20px;
-		width: 55%;
-	}
-
+	/*This gets the buttons to stretch out when the screen is really small */
 	.buttons_container {
-		display: flex;
-
+		width: 100%;
+		height: auto;
+		border-top: medium solid black;
 	}
 
-	.featured_work {
-		display: flex;
-
-	}
-
-	.featured_item {
-		text-align: bottom;
-		width: 33%;
+	/*This gets the image to stretch out when the screen is small*/
+	#main_img {
+		width: 100%;
 	}
 
 	.button {
-		margin: 10px;
+		margin-top: 10px;
+		height: 40px;
 	}
-} 
- */
-/*2nd Break Point*/
-/*
-@media only screen and (min-width: 720px) {
 
-	image_and_button_container {
-		
-	}
-*/
 }
+
+
