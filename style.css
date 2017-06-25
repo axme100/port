@@ -2,6 +2,13 @@
 	box-sizing: border-box;
 }
 
+/*This will center the page when it get's too big */
+body{
+max-width: 1000px;
+margin: 0 auto !important;
+float: none !important;
+}
+
 /*The images don't stretch out of their containers with this command
 Before it was under the **/
 img {
@@ -57,8 +64,10 @@ h1, p {
 
 
 .button {
-  	margin-top: 5px;
+  	margin-top: 20px;
   	padding: 10px;
+
+
 }
 
 
@@ -89,7 +98,10 @@ h1, p {
 .featured_work {
 	font-size: 1em;
 	width: 100%;
-	display: flex;
+}
+
+.githublink {
+
 }
 
 .featured_item {
@@ -98,15 +110,12 @@ h1, p {
 	margin: 0px;
 }
 
-/*doesn't work*/
-#featured_work_title {
-	text-align: left;
-}
 
 .featured_image {
 	margin: 0;
 	height: auto;
 	width: auto;
+	height: 100px;
 }
 
 .col-1 {width: 8.33%;}
@@ -148,7 +157,12 @@ h1, p {
 		margin-top: 10px;
 		height: 40px;
 	}
-
 }
 
-
+/*Optimize layout for screens more than than 620px*/
+@media only screen and (min-width: 619px) {
+	
+	.featured_work {
+		display: flex;
+	}
+}
