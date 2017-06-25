@@ -1,22 +1,23 @@
+/*Use border boxing to optimize a grid layout*/
 * { 
 	box-sizing: border-box;
 }
 
-/*This will center the page when it get's too big */
+/*This will center the page when the viewport gets over 1000px*/
 body{
 max-width: 1000px;
 margin: 0 auto !important;
 float: none !important;
 }
 
-/*The images don't stretch out of their containers with this command
+/*The images (in featured images) don't stretch out of their containers with this command
 Before it was under the **/
 img {
 	max-width: 100%;
 }
 
-/*This code taken from w3 schools*/
-/*I think it reads for every column, float left, and give padding */
+/*This code taken from w3 schools to implement grid system*/
+/*It reads for every column, float left, and give padding */
 [class*="col-"] {
     float: left;
     padding: 15px;
@@ -57,7 +58,7 @@ h1, p {
 	height: 250px;
 }
 
-.buttons_container {
+.nav {
 	text-align: center;
 	height: 250px;
 }
@@ -100,16 +101,11 @@ h1, p {
 	width: 100%;
 }
 
-.githublink {
-
-}
-
 .featured_item {
 	text-align: center;
 	border-top: medium solid black;
 	margin: 0px;
 }
-
 
 .featured_image {
 	margin: 0;
@@ -118,6 +114,9 @@ h1, p {
 	height: 100px;
 }
 
+
+/*These are the column widths that I'm using for
+the grid system (taken from W3Schools*/
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -137,12 +136,12 @@ h1, p {
 
 	.image_and_buttons_container {
 		display: flex;
-		/*Column-reverse gets the buttons to come after */
+		/*Column-reverse gets the buttons to come after the image */
 		flex-direction: column-reverse;
 	}
 
 	/*This gets the buttons to stretch out when the screen is really small */
-	.buttons_container {
+	.nav {
 		width: 100%;
 		height: auto;
 		border-top: medium solid black;
@@ -162,6 +161,7 @@ h1, p {
 /*Optimize layout for screens more than than 620px*/
 @media only screen and (min-width: 619px) {
 	
+	/*This has it so all the featured work comes on to the same line*/
 	.featured_work {
 		display: flex;
 	}
