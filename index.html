@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Max Carey's Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 </head>
 <body>
-	<!--HEADER IS FIRST ROW IN GRID SYSTEM-->
-	<header class="row">
-		<!--Begin logo-->
-		<img class="col-4" id="logo" src="logo.png" alt="The logo for my portfolio"> 
-		<!--Begin Name and Title Div-->
-		<div class="col-8" id="name_and_title">
-			<h1 class="name"> Max Carey </h1>
-			<p class="personal_title"> Linguistics, Spanish, Programming </p>
-		</div>
-	</header>
-	<!--BEGIN SECOND ROW IN GRID SYSTEM-->
-	<section class="image_and_buttons_container row">
-		<!--Begin container for buttons-->
-		<div class = "col-3 nav">
-			<p class="button button_cv"> CV </p>
-			<p class="button button_code"> Code </p>
-			<p class="button button_about"> About Me </p>
-		</div>
-		<!--Begin Main Image No Texting While Canooing-->
-		<img class="col-9" id="main_img" src="main_img.JPG" alt="The logo for my portfolio">
-	</section>
-	<footer>
-		<h1 id="featured_work_title"> Featured Work: </h1>
-		<!--Create a container for the featured work itmes
-		May want to come back to this later to see if figures are the best thing to use-->
-		<div class="featured_work">
-			<!--Begin Spanlib-->
-			<div class = "featured_item">
-				<h2> Spanlib: Spanish Mad Lib (for Python) </h2>
-				<img class="featured_image" src="rasberry_pi.JPG" alt="The logo for my portfolio">
-				<p class="githublink"> https://www.google.com </p>
+	<div class="grid_container">
+		<!--HEADER IS FIRST ROW IN GRID SYSTEM-->
+		<header class="row">
+			<!--Begin logo-->
+			<img class="col-4" id="logo" src="logo.png" alt="The logo for my portfolio"> 
+			<!--Begin Name and Title Div-->
+			<div class="col-8" id="name_and_title">
+				<h1 class="name"> Max Carey </h1>
+				<p class="personal_title"> Linguistics, Spanish, Programming </p>
 			</div>
-			<!--Begin Spanpron-->
-			<div class = "featured_item">
-				<h2> Pronunciation Workshop (Audio) </h2> 
-				<img class="featured_image" src="span_pron_wkshop.png" alt="Picture of PPT">
-				<p class="githublink"> https://www.google.com </p>
+		</header>
+		<!--BEGIN SECOND ROW IN GRID SYSTEM-->
+		<section class="image_and_buttons_container row">
+			<!--Begin container for buttons-->
+			<div class = "col-3 nav">
+				<p class="button button_cv"> CV </p>
+				<p class="button button_code"> Code </p>
+				<p class="button button_about"> About Me </p>
 			</div>
-			<!--Begin Attitudes-->
-			<div class = "featured_item"> 
-				<h2> Publication on Language Attitudes to Spanish in WA </h2>
-				<img class="featured_image" src="att.jpg" alt="figure from my paper">
-				<p class="githublink"> https://www.google.com </p>
-			</div>
-		</div>	
-	</footer>
+			<!--Begin Main Image No Texting While Canooing-->
+			<img class="col-9" id="main_img" src="img/main_img.JPG" alt="The logo for my portfolio">
+		</section>
+		<footer>
+			<h1 id="featured_work_title"> Featured Work: </h1>
+			<!--Create a container for the featured work itmes
+			May want to come back to this later to see if figures are the best thing to use-->
+			<div class="featured_work">
+				<!--Begin Spanlib-->
+				<div class = "featured_item">
+					<h2> Spanlib: Spanish Mad Lib (for Python) </h2>
+					<img class="featured_image" src="img/rasberry_pi.JPG" alt="The logo for my portfolio">
+					<p class="githublink"> https://www.google.com </p>
+				</div>
+				<!--Begin Spanpron-->
+				<div class = "featured_item">
+					<h2> Pronunciation Workshop (Audio) </h2> 
+					<img class="featured_image" src="img/span_pron_wkshop.png" alt="Picture of PPT">
+					<p class="githublink"> https://www.google.com </p>
+				</div>
+				<!--Begin Attitudes-->
+				<div class = "featured_item"> 
+					<h2> Publication on Language Attitudes to Spanish in WA </h2>
+					<img class="featured_image" src="img/att.jpg" alt="figure from my paper">
+					<p class="githublink"> https://www.google.com </p>
+				</div>
+			</div>	
+		</footer>
+	</div>
 </body>
 </html>
